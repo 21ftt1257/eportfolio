@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">  
+
+     .sibling-element {
+        padding: 10px;
+        background-color: #f2f2f2;
+    }
+     .parent-element {
+        position: relative; /* this will affect the child elements when they are applying position*/
+        height: 200px;
+        padding:   10px;
+        background-color: #81adc8;
+
+    }
+    .main-element {
+         /*position: static;*/ /* applying this wont affect the left, bottom, top or left*/
+         /*position: relative;  /*it affect the movement of the element from where it is originally started by following the left and top. it will not move the document*/ 
+         /*left: 100px;
+         top: 100px; */
+         /*position: absolute;*/ /* look up tp its parent or the ancestor if they have position, the element will move from the top and left of web page  if there is not other position unless the static, it will apply from the every edge of the web page following the left and top px. They are affected by scrolling bar */
+         position: fixed; /* it will always remain at the allocated position regardless there is scrollbar*/
+         right: 0px;
+         bottom: 0px;
+        background-color: yellow;
+        padding: 10px;
+    }
+
+    </style>
+</head>
+<body>
+ <div class="parent-element">
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+            
+            <div class="main-element">
+                All eyes on me. I am the main element.
+            </div>
+            
+            <div class="sibling-element">
+                I'm the other sibling element.
+            </div>
+</div>
+</body>
+</html>

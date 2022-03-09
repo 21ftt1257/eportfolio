@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>week5-2.3</title>
+	<style type="text/css">
+		
+		/*div>p{color: red;} */
+		/*.red{color: red;}*/
+		
+		/* div+p{color: red;} /* adjacent siblings "+" - look for the div, and look the next element, which is p (second sibling in the child) */
+
+		/* div~p{color: red;} /* general siblings "~"- look for div, and look for p element in child */
+
+		/* #fd>p{color: red;} /* use id to look up for p element from the first div while using ">" for being use only on the child, not the grandchild */
+		
+		div>div>p{color: red;} /* MULTIPLE - look for div, look for div under it and look for p elements under the div */
+
+	</style>
+</head>
+<body>   <!-- the parents -->
+
+	<!-- <div id="fd"> --> 
+	<div> 					<!-- the child -->
+		<p>Im the first child of 1st div</p> <!-- the grandschild -->
+		<p>Im the second child of 1st div</p>
+		<div><p>1.1</p></div>
+	</div>
+	<!-- <p class="red">I am the next sibling just after 1st div</p> -->
+	<p>I am the next sibling just after 1st div</p>
+	<p>I am he second sibling just after 1st div</p>
+	<div>
+		<p>I am the first child of the 2nd div</p>
+	</div>
+	<!-- <p class="red">I am the next sibling after the 2nd div</p> -->
+	<p>I am the next sibling after the 2nd div</p>
+	<p>I am the second sibling just after 2nd div</p>
+	<p>I am the third sibling just after 2nd div</p>
+
+</body>
+</html>
