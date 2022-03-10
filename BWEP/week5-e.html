@@ -35,33 +35,7 @@
 			width: 200px;
 			height: 150px;}
 
-		.rounded{
-			border: black;
-			width: 400px;
-			border-radius: 50px;
-			border: 1px solid;
-			font-size: 1em;
-			text-align: center;
-			/*position: relative;*/
-			display: inline-block;
-			/*flex-wrap: wrap;*/
-			justify-content: center;
-
-		}
-
-		.cn{
-			padding-top: 80px;
-			padding-right: 30px;
-			padding-left: 30px;
-			padding-bottom: 20px;
-			background-image: url("assets/images/id/dancing.gif");
-			background-repeat: repeat-x;
-			background-size: 100px 80px;
-			/*background width: 100px;
-			background height: 80px;*/
-			font-family: courier new;
-			/*position: relative;*/
-		}
+		div[class="rounded"]{padding-top: 20px; padding-bottom: 20px; padding-right: 30px; padding-left: 30px;}
 
 		#lorem{
 			margin: auto;
@@ -94,11 +68,40 @@
 		
 		#thebold{color: red;font-size: 1.75em;} /*purposely included*/
 		/* color font to blue */
-		b[color]{color: blue;}
+		b[id~="color"]{color: blue;}
 		/*p::#thebold{color: blue;}*/
 		/*b[id]{color: blue;}*/
 		/*[#thebold~="thebold"]{color: blue;}*/
 
+		.rounded{
+			border: black;
+			width: 400px;
+			border-radius: 50px;
+			border: 1px solid;
+			font-size: 1em;
+			text-align: center;
+			/*position: relative;*/
+			display: inline-block;
+			/*flex-wrap: wrap;*/
+			justify-content: center;
+
+		}
+
+		.cn{
+			padding-top: 80px;
+			padding-right: 30px;
+			padding-left: 30px;
+			padding-bottom: 20px;
+			background-image: url("assets/images/id/dancing.gif");
+			background-repeat: repeat-x;
+			background-size: 100px 80px;
+			/*background width: 100px;
+			background height: 80px;*/
+			font-family: courier new;
+			/*position: relative;*/
+		}
+
+		
 		p>span{
 			color: magenta;
 			font-weight: bolder;
@@ -107,19 +110,18 @@
 			font-family: courier new;
 		}
 
-		div:nth-child(1){
+		
+
+		div:nth-child(1),
+		div:nth-child(3) {
 			padding-top: 20px;
 			padding-bottom: 20px;
 			padding-right: 30px;
 			padding-left: 30px;
 		}
 
-		div:nth-child(3){
+		div:nth-child(3)>p {
 			border-color: black;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			padding-right: 30px;
-			padding-left: 30px;
 			color: deepskyblue;
 			font-weight: bolder;
 
