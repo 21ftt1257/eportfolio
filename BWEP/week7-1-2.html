@@ -19,6 +19,14 @@ align-content
 		
 		div{display: flex; border: 1px solid; 
 			width: 500px;height:400px;
+			justify-content: space-around;  /* give spaces around the item */
+			align-items: center; /* set the item in the center / for single line */
+			/*flex-direction: row-reverse;*/ /*  reversing the items */
+			/*width: 500px; height: 600px;*//* rewriting the size dimension of parents */
+			/*flex-wrap: wrap;*/ /* the son maintain the actual width and height withouth affecting others */
+			/*align-content: center;*/ /* bring the item content into the center of the border   /  use or affected only for wrap purposes / multiple line */
+
+			/* align-self: flex-end - is for the align content option to be not the same as other content line which is at the star(top) or end(bottom) */
 		}
 
 		p{width:200px;height: 100px; 
