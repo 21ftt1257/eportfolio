@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 7 ePortfolio part 2</title>
+    <style type="text/css">
+
+    #container {
+       /* margin: 0px auto;
+        width: 600px;
+        border-collapse: collapse;*/
+        display: flex;
+        flex-wrap: wrap;
+        width: 650px;
+        margin: auto;
+    }
+
+   /* h3{
+        text-align: center;}*/
+
+  /*  #container>form>div{
+        border: solid 1px;}*/
+
+    .first{
+        width: 400px;
+        padding: 5px;
+        /*display: inline-block;*/
+        box-sizing: border-box;
+    }
+
+    .second{
+        /*text-align: center;*/
+        display: flex;
+        flex-grow: 1;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .third{
+        flex-grow: 1;
+    }
+
+    .fourth{
+        flex: 100%;
+        text-align: center;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+</style>
+</head>
+<body>
+    <div id="container">
+<!-- <h3>Registration for Covid-19 Volunteer - &reg; C19-Team</h3>
+<form method="" action=""> -->
+
+
+<div class="first"><label>Fullname</label></div>
+<div class="second"><input class="third" type="text" name="txtFullName" maxlength="30"></div>
+
+                
+<!-- <form action="" method=""> -->
+<div class="first"><label>Email</label></div>
+<div class="second"><input class="third" type="Email" name="Email" id="Email"></div> 
+
+
+<div class="first"><label>Date you can start</label></div>
+<div class="second"><input class="third" type="Date" name=""></div>
+
+
+<div class="first"><label>Morning shift preference</label></div>
+<div class="second"><input class="third" type="time" name=""></div>
+
+
+<div class="first"><label>Evening shift perference</label></div>
+<div class="second"><input class="third" type="time" name=""></div>
+
+
+<div class="first"><label>How many hours you can work? In multiple of 3</label></div>
+<div class="second"><input class="third" type="number" name="quantity" id="quantity" value=" " step="3" min="3" max="9"></div>
+
+
+<div class="first"><label>Distance you willing to commute to volunteer center?</label></div>
+<div class="second"><label>1</label>
+<input type="range" name="range" id="range" step="1" value="3" min="1" max="15">
+<label>15</label></div>
+
+        
+<div class="first"><label>You currency perference for payment?</label></div>
+<div class="second"><input type="radio" name="$symbol" id="pound">
+<label>&pound;</label>
+<input type="radio" name="$symbol" id="yen">
+<label>&yen;</label>
+<input type="radio" name="$symbol" id="euro">
+<label>&euro;</label></div>
+
+
+<div class="fourth">
+    <textarea name="txtA_Address" rows="6" cols="40" placeholder="Type your home address"></textarea>
+</div>
+
+<div class="fourth">
+    <label><strike>You will be given daily meals</strike></label>
+</div>
+ 
+<div class="fourth">
+    <label for="checkTerms"><input type="checkbox" name="scales" disabled="1" checked="1" id="scales"> I agree to all terms and conditions</label>
+</div>
+
+<div class="fourth">
+    <label for="checkRobot">Prove you are not robot: 10 &lt; 20? 
+    <input type="checkbox" name="scales" id="scales"></label>
+</div>
+
+<div class="fourth">
+    <input type="submit" name="Submit" value="Volunteer now!">
+</div>
+
+<div class="fourth">   
+    <input type="reset" name="reset" value="Start Over">
+</div>
+
+<div class="fourth">
+    <label>For more informaton, visit MOH <a href="https://www.moh.gov.bn/Pages/Home.aspx" target="_blank">website</a></label>
+</div>
+
+</form>
+
+</div>
+
+
+<!-- <p>Denzel Washington once said...</p>
+
+<blockquote><b>&quot;At the end of the day it’s not about what you have or even what you’ve accomplished… it’s about who you’ve lifted up, who you’ve made better. It’s about what you’ve given back.&quot;</b></blockquote> <br>
+
+<pre>So roses are red, violets are blue
+It's all in my head, no matter what I do
+So roses are red, violets are blue
+It's all in my head, no matter what I do</pre> -->
+
+</body>
+</html>
