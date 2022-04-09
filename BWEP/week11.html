@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var time = prompt("Enter time in 24hr: ")
+	var wx = prompt("Enter weather: ")
+
+	// if(time>=0 && time<=6){
+	// 	document.write("Too early to go out")
+	// }
+	// else if((time>6 && time<17) && wx == "sunny"){
+	// 	document.write("Lets play outside")
+	// }
+	// else if((time>6 && time<17) && wx == "raining"){
+	// 	document.write("Lets play indoor")
+	// }
+	// else if((time>16 && time<22) && wx == "sunny"){
+	// 	document.write("Lets go to cinema (summer days)")
+	// }
+	// else if((time>16 && time<22) && wx == "raining"){
+	// 	document.write("watch movie at home")
+	// }
+	// else if((time>21 && time<25)){
+	// 	document.write("it is bed time!")}
+	// else{
+	// 	document.write("shows invalid and goodbye")
+	// }
+
+	//Nested IF
+	if(time>=0 && time<=6){
+	 	document.write("Too early to go out")
+	} 
+	if(time>6 && time<17){
+	 	if(wx == "sunny"){
+	 		document.write("Lets play outside")
+	 	}else if (wx == "raining"){
+	 		document.write("Lets play indoor")
+	 	}
+	 }
+	 if(time>16 && time<22){
+	 	if(wx == "sunny"){
+	 		document.write("Lets go to cinema (summer days)")
+	 	}else if(wx == "raining"){
+	 		document.write("watch movie at home")
+	 	}
+	 }
+	 if(time>21 && time<25){
+	 	document.write("it is bed time")
+	 }
+	 else{
+	 	document.write("shows invalid and goodbye")
+	 
+	}
+
+</script>
+
+
+</body>
+</html>

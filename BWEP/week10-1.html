@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 10-1</title>
+	<script type="text/javascript">
+		// alert("hey you! stop it!"); // to alert user on web page with ok button
+
+		// alert("hey you!\n stop it!"); // \n is a new line. to include the ", add \, for eg hey \"you\".
+
+		// confirm("confirm pass?"); // to confirming user on web page with ok and cancel button
+
+		// prompt("What is your name?", "SK"); 
+
+		// var firstName = "SK"; // *var = variable (cant start with no., no space, no reserved keyword.)
+		// alert(firstName);
+
+		// var firstName=prompt("Enter your name: ");
+		// var age = prompt("Enter your age: ");
+
+		// var firstnum= Number(prompt("Enter the first number: "));
+		// var secondnum= Number(prompt("Enter the second number: "));
+		// var thirdnum= Number(prompt("Enter the third number: "));
+		// var fourthnum= Number(prompt("Enter the fourth number: ");
+		// var fifthnum= Number(prompt("Enter the fifth number: "));
+		
+		// EXERCISE 
+		// var firstnum = prompt("Enter first number");
+		// var secondnum =prompt("Enter second number");
+		// var thirdnum = prompt("Enter third number");
+		// var fourthnum = prompt("Enter fourth number");
+		// var fifthnum = prompt("Enter fifth number");
+
+		// var sum = Number(firstnum)+Number(secondnum)+Number(thirdnum)+Number(fourthnum)+Number(fifthnum);
+
+		var hb = new Date();
+		// alert (hb);
+		alert(hb.getFullYear()); // get the full year
+
+		// alert(hb.getMonth()); // get the month. Month start with 0 = january , 1 = February... in javascript
+
+		// alert(hb.getDay()); // in JavaScript, day start on Sunday and sunday = 0, Monday = 1 etc.....
+
+		// alert(hb.getHours()); // to get the hours
+
+		// alert(hb.getDate()); // to get the date
+
+		//var ahad = new Date(2022,2,27,10,30,0,0); // to retrieve the past days * Accept up to 7 value, (Year, month,day,hour,minutes,sec,milisec)
+		//var ahad = new Date(2022); // this will be treated as millisecond if only one value is written. 
+		//var ahad = new Date(99,2,27,10,30,0,0); // represent 19xx year
+		//var ahad = new Date(9,2,27,10,30,0,0); // represent 1909 year
+		// 1sec = 1000ms
+		//alert (ahad.getDay()); // to get the day 
+
+	</script>
+</head>
+<body>
+<h1>Hello World</h1>
+<script type="text/javascript">
+	// document.write(firstName);
+	// document.write("<br>" + age); // <br> / <p> to add space between the name and age
+	// document.write(firstName + "<br>" + age + "<br>") // joining the together
+	// document.write(" In the next 5 years, you will be " + (Number(age) + 5)); // Number(age) -> age="??" into age=??
+	// document.write("<br>");
+	// document.write(" Last 5 years, you were " + (age-5)); // when string no. and minus, multiply, or divide, the string will automatically convert into no.
+	// console.log("I am happy today!"); // use for debugging..
+
+	// EXERCISE
+	// document.write(firstnum + "<br>");
+	// document.write(secondnum + "<br>");
+	// document.write(thirdnum + "<br>");
+	// document.write(fourthnum + "<br>");
+	// document.write(fifthnum + "<br>");
+
+	 document.write(" The sum of "+firstnum+ ", " +secondnum+ ", " +thirdnum+ ", "+ fourthnum+ " and " +fifthnum+ " is " + sum + ".");
+	 document.write("<br>")
+
+	 document.write("\n The average is " + (sum / 5));
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var name = prompt("Enter name: ");
+	var time = Number(prompt("Enter time in 24hr (whole number only): "));
+	var firstNum = Number(prompt("Enter first number: "));
+	var secondNum = Number(prompt("Enter second number: "));
+	var choices = prompt("Enter choice. 1 add, 2 multiply: ");
+	var choices2, enjoy = "";
+	var clock="";
+	var numOne, numTwo = "";
+	var firstPick, secondPick = "";
+
+	if (time == 0,12){
+		clock = "Good Morning " + name;
+	} else if (time == 13,24){
+		clock = "Good Day " + name;
+	}else{
+		clock = "Sorry " + name + ". I need a valid time."
+	}
+
+	if (choices == "1"){
+		numOne = firstNum + secondNum;
+	} else if(choices == "2"){
+		numTwo = firstNum * secondNum;
+	}
+
+	if(choices2 == "1"){
+		firstPick = "add";
+	} else if (choices2 == "2"){
+		secondPick = "multiply"
+	}
+
+	if (clock == Good Morning){
+		enjoy = "your morning";
+	}else if(clock == good Day){
+		enjoy = "the rest of your days"
+	}
+
+		document.write("Enter name: " + clock);
+		document.write("<br>");
+		document.write("Enter first number: " + firstNum);
+		document.write("<br>");
+		document.write("Enter second number: " + secondNum);
+		document.write("<br>");
+		document.write("You decided to " + choices2);
+		document.write("<br>");
+		document.write("The answer is " + choices);
+		document.write("<br>");
+		document.write("Enjoy " + enjoy);
+
+</script>
+</body>
+</html>

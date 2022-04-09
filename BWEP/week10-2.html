@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week10-2</title>
+</head>
+<body>
+
+<script type="text/javascript">
+		
+	// var x = 10; // 	INITIALIZE 
+	// var y = 15;
+	// var z = "10";
+	// x = 5; //x will change its value into 5. 
+	// var t;  // DECLARE
+	// var t = "";
+	// console.log("t is " + t);
+	// console.log("x is " + x)
+	// const DISCOUNT = 0.1; // once declare the value inside it, cannot change the value at all.
+	// console.log("DISCOUNT is " + DISCOUNT);
+	// DISCOUNT = 0.5;
+	// console.log("DISCOUNT is " + DISCOUNT);
+
+	// var answer = (x=y); // ' = ' is a single that will the value x changes into x value, so it changes to 15 
+	// alert(answer);
+	// alert(x===z); // compare the value and also the types for eg. the value comparing to string in var x and var z
+	// alert(x==z);
+
+	// if(x>y){
+	// 	console.log("X is basar than y");
+	// }
+	// if(x<y){
+	// 	console.log("X is basar than y");
+	// }
+
+	// if(x>y){
+	// 	console.log("X is basar than y");
+	// }
+	// else{
+	// 	console.log("x is damit than y");
+	// }
+
+	//ACTIVITY
+	// Enter your name: Ahmad
+	// Enter your gender [M/F]:M
+	// Enter year of birth: 2002
+
+	// Hi Awang Ahmad. This year you will be 20 years old
+	// use Date to retrieve current year.
+
+	var name = prompt("Enter your name: ");
+	var gender = prompt("Enter your gender [M/F]: ");
+	var birth = prompt("Enter year of birth: ");
+	var year = new Date();
+	var currentYear = year.getFullYear();
+	
+	var gend="";
+
+	//this one is repetition and balik2 so not improvised
+	//if(gender="M"){gend="Awang"}
+	//if(gender="m"){gend="Awang"}
+	//if(gender="F"){gend="Dayang"}
+	//if(gender="f"){gend="Dayang"}
+
+	//improve from previous but if user enter other than M/m/F/f, will always be Dayang..
+	// if(gender="M" || gender="M"){
+	// 	gend="Awang"
+	// }
+	// else{
+	// 	gend="Dayang"
+	// }
+
+	//more improvise than previous..
+	// if(gender="M" || gender="M"){
+	// 	gend="Awang"
+	// }
+	// if(gender="F" || gender="f"){
+	// 	gend="Dayang"
+	// }
+	//if(gender=="A" || gender=="a") //this one is for when user enter other than M/m/F/f
+	//	gend="Awg/Dyg"
+
+	if(gender=="M" || gender== "m"){
+		gend="Awang"
+	}
+	else if(gender=="F" || gender== "f"){
+		gend="Dayang"
+	}
+	else{
+		gend="Awang/Dayang"
+	}
+
+	document.write(" Hi " + gend +" "+ name + ". This year you will be " + (currentYear-birth) + " years old ." );
+
+</script>
+</body>
+</html>
